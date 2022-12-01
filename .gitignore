@@ -1,0 +1,6 @@
+**.exe
+**.pd
+**/zig-out/
+**/zig-cache/
+**/target/
+**.input
