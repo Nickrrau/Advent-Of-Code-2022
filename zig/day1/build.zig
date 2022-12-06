@@ -16,7 +16,7 @@ pub fn build(b: *std.build.Builder) void {
 }
 
 fn part1Setup(b: *std.build.Builder, target: std.zig.CrossTarget, mode: std.builtin.Mode) void {
-    const exe = b.addExecutable("day1", "part1/main.zig");
+    const exe = b.addExecutable("day1part1", "src/part1.zig");
     exe.setTarget(target);
     exe.setBuildMode(mode);
     exe.install();
@@ -29,17 +29,10 @@ fn part1Setup(b: *std.build.Builder, target: std.zig.CrossTarget, mode: std.buil
 
     const run_step = b.step("run-part1", "Run the part 1 solution");
     run_step.dependOn(&run_cmd.step);
-
-    const exe_tests = b.addTest("part1/main.zig");
-    exe_tests.setTarget(target);
-    exe_tests.setBuildMode(mode);
-
-    const test_step = b.step("test-part1", "Run unit tests");
-    test_step.dependOn(&exe_tests.step);
 }
 
 fn part2Setup(b: *std.build.Builder, target: std.zig.CrossTarget, mode: std.builtin.Mode) void {
-    const exe = b.addExecutable("day2", "part2/main.zig");
+    const exe = b.addExecutable("day1part2", "src/part2.zig");
     exe.setTarget(target);
     exe.setBuildMode(mode);
     exe.install();
@@ -52,11 +45,4 @@ fn part2Setup(b: *std.build.Builder, target: std.zig.CrossTarget, mode: std.buil
 
     const run_step = b.step("run-part2", "Run the part 2 solution");
     run_step.dependOn(&run_cmd.step);
-
-    const exe_tests = b.addTest("part2/main.zig");
-    exe_tests.setTarget(target);
-    exe_tests.setBuildMode(mode);
-
-    const test_step = b.step("test-part2", "Run unit tests");
-    test_step.dependOn(&exe_tests.step);
 }
