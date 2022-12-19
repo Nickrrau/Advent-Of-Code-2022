@@ -5,3 +5,10 @@ Personal solutions done in Go, Rust, Zig, and Nim.
 Intent isn't to compete or be extremely correct, but to just get working experience in these languages.
 
 Go will typically be the most idiomatic and is where I have most familiarity, the solution there is often the basis for the solutions in the other langs.
+
+
+| Language | Day 1 1/2 | Day 2 1/2 | Day 3 1/2 | Day 4 1/2 | Day 5 1/2 | Day 6 1/2 | Day 5 1/2
+| Go | :heavy_check_mark: / :heavy_check_mark: | :heavy_check_mark: / :heavy_check_mark: | :heavy_check_mark: / :heavy_check_mark: | :heavy_check_mark: / :heavy_check_mark: | :heavy_check_mark: / :heavy_check_mark: |
+| Zig | :heavy_check_mark: / :heavy_check_mark: |
+| Rust | :heavy_check_mark: / :heavy_check_mark: |
+| Nim | :heavy_check_mark: / :heavy_check_mark: | :heavy_check_mark: / :heavy_check_mark: |
